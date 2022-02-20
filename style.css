@@ -1,0 +1,263 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    position: fixed;
+}
+.socials{
+    position: relative;
+    flex: 2;
+    margin: 30px;
+    margin-left: 120px;
+    
+    
+}
+.socials ul{
+    display: flex;
+    list-style: none;
+}
+.socials .social {
+    height: 30px;
+    width: 30px;
+    margin-right: 40px;
+}
+.socials, .navlinks {
+    display: flex;
+}
+nav {
+    flex: 1;
+}
+nav .navlinks{
+    list-style: none;
+    justify-content: space-around;
+}
+nav .navlink{
+    text-decoration: none;
+    justify-content: space-around;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(228, 220, 220);
+}
+.firstimage {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 100vh;
+    min-width: 100vw;
+    z-index: -2;
+}
+.firstimage img{
+    height: 100%;
+    width: 100%;
+    /* filter: grayscale(100%); */
+}
+
+.introduction {
+    height: 100vh;
+    width: 60%;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.hi h1 {
+    font-weight: 500;
+    display: block;
+    position: relative;
+    width: fit-content;
+    font-size: 95px;
+    /* background: linear-gradient(to right, rgb(170, 57, 57), #f88ba3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    color: transparent;
+    flex: 2;
+    /* background: lightsalmon; */
+    margin-left: 170px;
+    animation: text_reveal 1s ease forwards;
+    animation: text_transparent 0.5s ease-in forwards;
+    font-family: 'Nunito', sans-serif;
+}
+.hi h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: rgb(74, 85, 95);
+    animation: text_reveal_box 1s ease;
+    animation-delay: 1s;
+}
+
+.hi p {
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+    flex: 1;
+    margin-left: 170px;
+    letter-spacing: 1.5px;
+    word-spacing: 4px;
+}
+.line {
+    position: absolute;
+    background: black;
+    width: 2px;
+    height: 160px;
+    margin-left: 110px;
+    margin-top: 15px;
+    animation: text_transparent 0.5s ease-in forwards;
+}
+
+.cta {
+    padding: 50px 0px 0px 0px;
+}
+
+.cta .cta-select{
+    border: 2px solid #e6b9e1;
+    background: transparent;
+    color: #ffffff;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-left: 170px;
+    transition: 0.5s ease;
+    animation: cta 0.5s ease-in forwards;
+}
+
+.cta .cta-select:hover{
+    border: 2px solid #e6b9e1;
+    background: #ffd3fa;
+    color: rgb(0, 0, 0);
+    
+}
+
+@keyframes text_reveal_box {
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0%;
+        left: 100%;
+    }
+}
+
+@keyframes text_transparent {
+    0% {
+        transform: translateY(-150%);
+        color: transparent;
+    }
+    100% {
+        transform: translateY(0%);
+        color: white;
+    }
+}
+
+@keyframes cta {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(0%);
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+        transform: translateY(0%);
+    }
+}
+
+@keyframes text_reveal {
+
+    100% {
+        color: white;
+    }
+}
+/* SECOND PART */
+
+.aboutme {
+    margin-top: 150px;
+    position: relative;
+    /* background: blueviolet; */
+    height: 80vh;
+    width: 90%;
+    /* margin: auto; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.heading {
+    /* flex: 1; */
+    height: 520px;
+    width: 600px;
+    /* background: blueviolet; */
+
+}
+.heading h1 {
+    margin-left: 9vw;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-size: 55px;
+}
+.heading p {
+    margin-top: 30px;
+    font-family: 'Nunito', sans-serif;
+    margin-left: 9vw;
+}
+/* need to make portraits responsive. one option is to just make it an image instead */
+.portrait {
+
+    margin-left: 350px;
+    width: 450px;
+    height: 550px;
+    background: rgb(121, 110, 110);
+}
+.portrait2{
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 80px;
+    width: 22vw;
+    height: 550px;
+    background: transparent;
+    border: 5px solid rgb(121, 110, 110);
+}
+.cta-aboutme {
+    margin-top: 60px;
+    margin-left: 9vw;
+}
+.cta-aboutme .cta-git{
+    border: 2px solid #940383;
+    background: #940383;
+    color: white;
+    width: 140px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-right: 6vw;
+}
+.cta-aboutme .cta-resume{
+    border: 2px solid #700202;
+    background: transparent;
+    color: #940383;
+    width: 140px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 17px;
+    letter-spacing: 1px;
+}

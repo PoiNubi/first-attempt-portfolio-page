@@ -1,0 +1,83 @@
+.projectscontainer {
+    margin-top: 300px;
+    width: 90%;
+}
+.tab {
+    margin-top: 40px;
+    margin-left: 46vw;
+}
+.pheader h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    margin-left: 45vw;
+}
+.tablinks {
+    border: none;
+    margin-right: 30px;
+    margin-left: 0.45vw;
+    background: transparent;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: rgb(158, 154, 154);
+    outline: none;
+}
+.tablinks:hover {
+    color: black;
+}
+.tab button.active {
+    font-weight: 500;
+    color: black;
+}
+.cardcontainer {
+    margin-top: 150px;
+    display: flex;
+    margin-left: 8.5vw;
+}
+.cardflex {
+    display: flex;
+}
+.tabcontent {
+
+
+}
+.tabcontent .card {
+    position: relative;
+    width: 26vw;
+    height: 500px;
+    background: khaki;
+    margin-right: 40px;
+    margin: 0px 40px 40px 0px;
+}
+.tabcontent .card .cardimage {
+    background: lightblue;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+}
+.tabcontent .card .carddesc {
+    left: 0;
+    bottom: 0;
+}
+.tabcontent .card2 {
+    position: relative;
+    width: 26vw;
+    height: 500px;
+    background: khaki;
+    margin-right: 40px;
+    margin: 0px 40px 40px 0px;
+}
+.tabcontent .card2 .cardimage2 {
+    background: greenyellow;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+}
+.tabcontent .card2 .carddesc2 {
+    left: 0;
+    bottom: 0;
+}

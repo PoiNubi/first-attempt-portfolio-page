@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>KO</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./projects.css">
+    <link rel="stylesheet" href="./footer.css">
+</head>
+<body>
+    <header>
+        <div class="socials">
+            <ul>
+                <li class="social"><img src="./instagram-brands.svg" alt=""></li>
+                <li class="social"><img src="./github-square-brands.svg" alt=""></li>
+                <li class="social"><img src="./linkedin-brands.svg" alt=""></li>
+            </ul>
+                
+        </div>
+        <nav>
+            <ul class="navlinks">
+                <li><a href="" class="navlink">Home</a></li>
+                <li><a href="" class="navlink">About Me</a></li>
+                <li><a href="" class="navlink">Projects</a></li>
+                <li><a href="" class="navlink">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="presentation">
+            <div class="firstimage">
+                <img src="./image1.jpg" alt="">
+            </div>
+            <div class="introduction">
+                
+                <div class="hi">
+                    <div class="line">
+
+                    </div>
+                    <h1>HEY, I'M BRYAN <span></span></h1>
+                    <p>I'm a Web Developer</p>
+                    <!-- <h1>MY NAME IS <span></span></h1>
+                    <h1>BRYAN KO <span></span></h1> -->
+                    
+                </div>
+                <div class="cta">
+                    <button class="cta-select">My Resume</button>
+                </div>
+            </div>
+        </article>
+        <article class="abme">
+            <div class="aboutme">
+                <div class="portrait">
+
+                </div>
+                <div class="portrait2">
+
+                </div>
+                <div class="heading">
+                    <h1>ABOUT ME</h1>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates quidem nihil doloremque placeat, dolorem itaque!
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates quidem nihil doloremque placeat, dolorem itaque!
+                    </p>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates quidem nihil doloremque placeat, dolorem itaque!
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates quidem nihil doloremque placeat, dolorem itaque!
+                    </p>
+                    <div class="cta-aboutme">
+                        <button class="cta-git">My Github</button>
+                        <button class="cta-resume">My Resume</button>
+                    </div>
+                </div>
+        </article>
+        <article class="projectscontainer">
+            <div class="pheader">
+                <h1>PROJECTS</h1>
+            </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')">All</button>
+  				<button class="tablinks" onclick="openCity(event, 'Paris')">Apps</button>
+  				<button class="tablinks" onclick="openCity(event, 'Tokyo')">Websites</button>
+            </div>
+            <div class="cardcontainer">
+                <div id="London" class="tabcontent">
+                    <div class="cardflex">
+                        <div class="card">
+                            <div class="cardimage">
+
+                            </div>
+                            <div class="carddesc">
+
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="cardimage2">
+
+                            </div>
+                            <div class="carddesc2">
+
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div id="Paris" class="tabcontent">
+                    <div class="card">
+                        <div class="cardimage">
+
+                        </div>
+                        <div class="carddesc">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="Tokyo" class="tabcontent">
+                    <div class="card">
+                        <div class="cardimage">
+
+                        </div>
+                        <div class="carddesc">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- script for the catagory needs to be added here -->
+            <script>
+            function openCity(evt, tab) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tab).style.display = "block";
+            evt.currentTarget.className += " active";
+            }
+            document.getElementsByClassName('tablinks')[0].click()
+            </script>
+        </article>
+    </main>
+    <footer>
+        <div class="footercontainer">
+            <!-- <div class="footersocials">
+                <h1>SOCIALS</h1>
+                <ul>
+                    <li class="social"><img src="./instagram-brands.svg" alt=""></li>
+                    <li class="social"><img src="./github-square-brands.svg" alt=""></li>
+                    <li class="social"><img src="./linkedin-brands.svg" alt=""></li>
+                </ul>
+            </div>
+            <div class="footernavs">
+                <h1>LINKS</h1>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT ME</a></li>
+                    <li><a href="#">PROJECT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </div> -->
+    </footer>
+</body>
+</html>
